@@ -73,7 +73,7 @@ def index():
 
         for i in range(len(stocks)):
             overalltotal += stocks[i]['total']
-            overalltotal += cash[0]['cash']
+        overalltotal += cash[0]['cash']
 
         for i in range(len(stocks)):
             stocks[i]['price'] = usd(stocks[i]['price'])
@@ -94,7 +94,7 @@ def buy():
     if request.method == "POST":
 
         #ensure symbol/quantity submitted
-
+    
         if not request.form.get("symbol") or not request.form.get("shares"):
             return apology("No symbol/shares submitted", 400)
 
