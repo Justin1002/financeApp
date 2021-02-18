@@ -21,7 +21,10 @@ Full list can be found in requirements.txt
 
 ## Getting Started
 
-- Install all dependencies pip3 install requirements.txt
+- Install all dependencies  using the following command:
+  ```
+  pip3 install requirements.txt
+  ```
 - Register for an API key to query IEX data
   - iexcloud.io/cloud-login#/register/
   - Create an account and copy the key under the Token column (begins with pk_)
